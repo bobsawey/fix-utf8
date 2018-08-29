@@ -1,4 +1,4 @@
-module.exports = function (str) {
+
   return str
   // U+20AC  0x80  € â‚¬   %E2 %82 %AC
   .replace(/â‚¬/g, '€')
@@ -244,4 +244,3 @@ module.exports = function (str) {
   .replace(/Ã¾/g, 'þ')
   // U+00FF  0xFF  ÿ Ã¿  %C3 %BF
   .replace(/Ã¿/g, 'ÿ')
-}
