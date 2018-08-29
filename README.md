@@ -1,3 +1,5 @@
+I'm going to take a quick slapshot at porting this to python.
+
 # fix-utf8
 
 A function that tries its best to recover lost Latin Unicode characters, based on the [UTF-8 Encoding Debugging Chart](http://www.i18nqa.com/debug/utf8-debug.html#dbg)
