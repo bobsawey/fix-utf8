@@ -1,122 +1,120 @@
 
-  return str
-  // U+20AC  0x80  € â‚¬   %E2 %82 %AC
-  .replace(/â‚¬/g, '€')
-  // U+201A  0x82  ‚ â€š   %E2 %80 %9A
-  .replace(/â€š/g, '‚')
-  // U+0192  0x83  ƒ Æ’  %C6 %92
+  str = str.replace(/â‚¬/g, '€') # U+20AC  0x80  € â‚¬   %E2 %82 %AC
+  # U+201A  0x82  ‚ â€š   %E2 %80 %9A
+  str = str.replace(/â€š/g, '‚')
+  # U+0192  0x83  ƒ Æ’  %C6 %92
   .replace(/Æ’/g, 'ƒ')
-  // U+201E  0x84  „ â€ž   %E2 %80 %9E
+  # U+201E  0x84  „ â€ž   %E2 %80 %9E
   .replace(/â€ž/g, '„')
-  // U+2026  0x85  … â€¦   %E2 %80 %A6
+  # U+2026  0x85  … â€¦   %E2 %80 %A6
   .replace(/â€¦/g, '…')
-  // U+2020  0x86  † â€  %E2 %80 %A0
+ # U+2020  0x86  † â€  %E2 %80 %A0
   .replace(/â€\u00A0/g, '†')
-  // U+2021  0x87  ‡ â€¡   %E2 %80 %A1
+  # U+2021  0x87  ‡ â€¡   %E2 %80 %A1
   .replace(/â€¡/g, '‡')
-  // U+02C6  0x88  ˆ Ë†  %CB %86
+  # U+02C6  0x88  ˆ Ë†  %CB %86
   .replace(/Ë†/g, 'ˆ')
-  // U+2030  0x89  ‰ â€°   %E2 %80 %B0
+  # U+2030  0x89  ‰ â€°   %E2 %80 %B0
   .replace(/â€°/g, '‰')
-  // U+0160  0x8A  Š Å   %C5 %A0
+  # U+0160  0x8A  Š Å   %C5 %A0
   .replace(/Å\u00A0/g, 'Š')
-  // U+2039  0x8B  ‹ â€¹   %E2 %80 %B9
+  # U+2039  0x8B  ‹ â€¹   %E2 %80 %B9
   .replace(/â€¹/g, '‹')
-  // U+0152  0x8C  Œ Å’  %C5 %92
+  # U+0152  0x8C  Œ Å’  %C5 %92
   .replace(/Å’/g, 'Œ')
-  // U+017D  0x8E  Ž Å½  %C5 %BD
+  # U+017D  0x8E  Ž Å½  %C5 %BD
   .replace(/Å½/g, 'Ž')
-  // U+2018  0x91  ‘ â€˜   %E2 %80 %98
+  # U+2018  0x91  ‘ â€˜   %E2 %80 %98
   .replace(/â€˜/g, '‘')
-  // U+2019  0x92  ’ â€™   %E2 %80 %99
+  # U+2019  0x92  ’ â€™   %E2 %80 %99
   .replace(/â€™/g, '’')
-  // U+201C  0x93  “ â€œ   %E2 %80 %9C
+  # U+201C  0x93  “ â€œ   %E2 %80 %9C
   .replace(/â€œ/g, '“')
-  // U+201D  0x94  ” â€  %E2 %80 %9D
+  # U+201D  0x94  ” â€  %E2 %80 %9D
   .replace(/â€\u009D/g, '”')
-  // U+2022  0x95  • â€¢   %E2 %80 %A2
+  # U+2022  0x95  • â€¢   %E2 %80 %A2
   .replace(/â€¢/g, '•')
-  // U+2013  0x96  – â€“   %E2 %80 %93
+  # U+2013  0x96  – â€“   %E2 %80 %93
   .replace(/â€“/g, '–')
-  // U+2014  0x97  — â€”   %E2 %80 %94
+  # U+2014  0x97  — â€”   %E2 %80 %94
   .replace(/â€”/g, '—')
-  // U+02DC  0x98  ˜ Ëœ  %CB %9C
+  # U+02DC  0x98  ˜ Ëœ  %CB %9C
   .replace(/Ëœ/g, '˜')
-  // U+2122  0x99  ™ â„¢   %E2 %84 %A2
+  # U+2122  0x99  ™ â„¢   %E2 %84 %A2
   .replace(/â„¢/g, '™')
-  // U+0161  0x9A  š Å¡  %C5 %A1
+  # U+0161  0x9A  š Å¡  %C5 %A1
   .replace(/Å¡/g, 'š')
-  // U+203A  0x9B  › â€º   %E2 %80 %BA
+  # U+203A  0x9B  › â€º   %E2 %80 %BA
   .replace(/â€º/g, '›')
-  // U+0153  0x9C  œ Å“  %C5 %93
+  # U+0153  0x9C  œ Å“  %C5 %93
   .replace(/Å“/g, 'œ')
-  // U+017E  0x9E  ž Å¾  %C5 %BE
+  # U+017E  0x9E  ž Å¾  %C5 %BE
   .replace(/Å¾/g, 'ž')
-  // U+0178  0x9F  Ÿ Å¸  %C5 %B8
+  # U+0178  0x9F  Ÿ Å¸  %C5 %B8
   .replace(/Å¸/g, 'Ÿ')
-  // U+00A0  0xA0    Â   %C2 %A0
+  # U+00A0  0xA0    Â   %C2 %A0
   .replace(/Â /g, ' ')
-  // U+00A1  0xA1  ¡ Â¡  %C2 %A1
+  # U+00A1  0xA1  ¡ Â¡  %C2 %A1
   .replace(/Â¡/g, '¡')
-  // U+00A2  0xA2  ¢ Â¢  %C2 %A2
+  # U+00A2  0xA2  ¢ Â¢  %C2 %A2
   .replace(/Â¢/g, '¢')
-  // U+00A3  0xA3  £ Â£  %C2 %A3
+  # U+00A3  0xA3  £ Â£  %C2 %A3
   .replace(/Â£/g, '£')
-  // U+00A4  0xA4  ¤ Â¤  %C2 %A4
+  # U+00A4  0xA4  ¤ Â¤  %C2 %A4
   .replace(/Â¤/g, '¤')
-  // U+00A5  0xA5  ¥ Â¥  %C2 %A5
+  # U+00A5  0xA5  ¥ Â¥  %C2 %A5
   .replace(/Â¥/g, '¥')
-  // U+00A6  0xA6  ¦ Â¦  %C2 %A6
+  # U+00A6  0xA6  ¦ Â¦  %C2 %A6
   .replace(/Â¦/g, '¦')
-  // U+00A7  0xA7  § Â§  %C2 %A7
+  # U+00A7  0xA7  § Â§  %C2 %A7
   .replace(/Â§/g, '§')
-  // U+00A8  0xA8  ¨ Â¨  %C2 %A8
+  # U+00A8  0xA8  ¨ Â¨  %C2 %A8
   .replace(/Â¨/g, '¨')
-  // U+00A9  0xA9  © Â©  %C2 %A9
+  # U+00A9  0xA9  © Â©  %C2 %A9
   .replace(/Â©/g, '©')
-  // U+00AA  0xAA  ª Âª  %C2 %AA
+  # U+00AA  0xAA  ª Âª  %C2 %AA
   .replace(/Âª/g, 'ª')
-  // U+00AB  0xAB  « Â«  %C2 %AB
+  # U+00AB  0xAB  « Â«  %C2 %AB
   .replace(/Â«/g, '«')
-  // U+00AC  0xAC  ¬ Â¬  %C2 %AC
+  # U+00AC  0xAC  ¬ Â¬  %C2 %AC
   .replace(/Â¬/g, '¬')
-  // U+00AD  0xAD  ­ Â­  %C2 %AD
+  # U+00AD  0xAD  ­ Â­  %C2 %AD
   .replace(/Â­/g, '­')
-  // U+00AE  0xAE  ® Â®  %C2 %AE
+  # U+00AE  0xAE  ® Â®  %C2 %AE
   .replace(/Â®/g, '®')
-  // U+00AF  0xAF  ¯ Â¯  %C2 %AF
+  # U+00AF  0xAF  ¯ Â¯  %C2 %AF
   .replace(/Â¯/g, '¯')
-  // U+00B0  0xB0  ° Â°  %C2 %B0
+  # U+00B0  0xB0  ° Â°  %C2 %B0
   .replace(/Â°/g, '°')
-  // U+00B1  0xB1  ± Â±  %C2 %B1
+  # U+00B1  0xB1  ± Â±  %C2 %B1
   .replace(/Â±/g, '±')
-  // U+00B2  0xB2  ² Â²  %C2 %B2
+  # U+00B2  0xB2  ² Â²  %C2 %B2
   .replace(/Â²/g, '²')
-  // U+00B3  0xB3  ³ Â³  %C2 %B3
+  # U+00B3  0xB3  ³ Â³  %C2 %B3
   .replace(/Â³/g, '³')
-  // U+00B4  0xB4  ´ Â´  %C2 %B4
+  # U+00B4  0xB4  ´ Â´  %C2 %B4
   .replace(/Â´/g, '´')
-  // U+00B5  0xB5  µ Âµ  %C2 %B5
+  # U+00B5  0xB5  µ Âµ  %C2 %B5
   .replace(/Âµ/g, 'µ')
-  // U+00B6  0xB6  ¶ Â¶  %C2 %B6
+  # U+00B6  0xB6  ¶ Â¶  %C2 %B6
   .replace(/Â¶/g, '¶')
-  // U+00B7  0xB7  · Â·  %C2 %B7
+  # U+00B7  0xB7  · Â·  %C2 %B7
   .replace(/Â·/g, '·')
-  // U+00B8  0xB8  ¸ Â¸  %C2 %B8
+  # U+00B8  0xB8  ¸ Â¸  %C2 %B8
   .replace(/Â¸/g, '¸')
-  // U+00B9  0xB9  ¹ Â¹  %C2 %B9
+  # U+00B9  0xB9  ¹ Â¹  %C2 %B9
   .replace(/Â¹/g, '¹')
-  // U+00BA  0xBA  º Âº  %C2 %BA
+  # U+00BA  0xBA  º Âº  %C2 %BA
   .replace(/Âº/g, 'º')
-  // U+00BB  0xBB  » Â»  %C2 %BB
+  # U+00BB  0xBB  » Â»  %C2 %BB
   .replace(/Â»/g, '»')
-  // U+00BC  0xBC  ¼ Â¼  %C2 %BC
+  # U+00BC  0xBC  ¼ Â¼  %C2 %BC
   .replace(/Â¼/g, '¼')
-  // U+00BD  0xBD  ½ Â½  %C2 %BD
+  # U+00BD  0xBD  ½ Â½  %C2 %BD
   .replace(/Â½/g, '½')
-  // U+00BE  0xBE  ¾ Â¾  %C2 %BE
+  # U+00BE  0xBE  ¾ Â¾  %C2 %BE
   .replace(/Â¾/g, '¾')
-  // U+00BF  0xBF  ¿ Â¿  %C2 %BF
+  # U+00BF  0xBF  ¿ Â¿  %C2 %BF
   .replace(/Â¿/g, '¿')
   // U+00C0  0xC0  À Ã€  %C3 %80
   .replace(/Ã€/g, 'À')
@@ -136,7 +134,7 @@
   .replace(/Ãˆ/g, 'È')
   // U+00C9  0xC9  É Ã‰  %C3 %89
   .replace(/Ã‰/g, 'É')
-  // U+00CA  0xCA  Ê ÃŠ  %C3 %8A
+  str = str. U+00CA  0xCA  Ê ÃŠ  %C3 %8A
   .replace(/ÃŠ/g, 'Ê')
   // U+00CB  0xCB  Ë Ã‹  %C3 %8B
   .replace(/Ã‹/g, 'Ë')
